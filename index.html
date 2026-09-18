@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repuestos - Inicio</title>
+    <style>
+        /* Estilos Generales - Minimalista y Oscuro */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #000000;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #222;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #b0b0b0;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        /* Sección Principal (Hero) */
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+            background: linear-gradient(to bottom, #000000, #121212);
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: #999;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25d366;
+            color: #ffffff;
+            padding: 12px 25px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            transition: background 0.3s;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #20ba5a;
+        }
+
+        /* Secciones */
+        section {
+            padding: 60px 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 26px;
+            color: #ffffff;
+            margin-bottom: 25px;
+            border-left: 3px solid #ffffff;
+            padding-left: 12px;
+        }
+
+        /* Catálogo Grid */
+        .grid-catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 6px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        .btn-cotizar {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 13px;
+            border: 1px solid #444;
+            transition: background 0.3s;
+        }
+
+        .btn-cotizar:hover {
+            background-color: #444;
+        }
+
+        /* Footer / Redes */
+        footer {
+            background-color: #0a0a0a;
+            color: #777;
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #222;
+            margin-top: 40px;
+        }
+
+        .social-links {
+            margin-bottom: 15px;
+        }
+
+        .social-links a {
+            color: #aaa;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <header>
+        <div class="logo"><table><tr><td><img height="65" src="C:\Users\IMPOEX\Documents\kbpartspaginaweb\imagenes\logo.jpeg" ></td><td><h3>KBPARTS</h3></td></tr></table></div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="nosotros.html">Quiénes Somos</a>
+        </nav>
+    </header>
+
+    <!-- Inicio / Hero -->
+    <div class="hero" id="inicio">
+        <h1>Repuestos de todo tipo nuevos y usados</h1>
+        <p>Encuentra las piezas que necesitas para tu vehículo con atención inmediata y personalizada.</p>
+        <a href="https://wa.link/m7bwn5" target="_blank" class="btn-whatsapp">Escríbenos por WhatsApp</a>
+    </div>
+
+    <!-- Catálogo -->
+    <section id="catalogo">
+        <h2>Catálogo Destacado</h2>
+        <div class="grid-catalogo">
+            <div class="card">
+                <h3>Repuestos honda CRV 2012-2016</h3>
+                <img height="100" src="imagenes/crv.jpeg" alt="">
+                <p>Nuevo stock de repuestos para honda crv del 2012 al 2016 originales</p>
+                <a href="https://wa.link/m7bwn5" target="_blank" class="btn-cotizar">Cotizar por WhatsApp</a>
+            </div>
+            <div class="card">
+                <h3>Repuestos honda civic 2016-2021</h3>
+                  <img src="imagenes/civic.jpeg" height="100" alt="">
+                <p>Nuevo ingreso de stock para honda civic del 2006 al 2021</p>
+              
+                <a href="https://wa.link/m7bwn5" target="_blank" class="btn-cotizar">Cotizar por WhatsApp</a>
+            </div>
+            <div class="card">
+                <h3>Repuestos mercedes benz E550 2007</h3>
+                <img src="imagenes/w211.jpeg" height="100" alt="">
+                <p>Amplio stock de repuestos para mercedes benz E550 o W211 </p>
+                <a href="https://wa.link/m7bwn5" target="_blank" class="btn-cotizar">Cotizar por WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiénes Somos -->
+    <section id="nosotros">
+        <h2>Quiénes Somos</h2>
+        <p style="color: #999; max-width: 800px;">
+            Somos un negocio especializado en la importación y venta de repuestos automotrices. Nos enfocamos en ofrecer piezas confiables y un servicio rápido para que encuentres exactamente lo que tu vehículo necesita sin complicaciones.
+        </p>
+    </section>
+
+    <!-- Footer y Redes Sociales -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/1FXWuR9KU1/" target="_blank"><img height="50" src="imagenes/Facebook_Logo_(2019).png" alt=""></a>
+            <a href="https://www.tiktok.com/@autoparteskb?_r=1&_t=ZS-99qHwOUMk4n" target="_blank"><img height="50" src="imagenes/tiktok-icon-free-png.webp" alt=""></a>
+        </div>
+        <p>&copy; 2026 Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
+</body>
+</html>
